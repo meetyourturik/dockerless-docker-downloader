@@ -12,7 +12,9 @@ This reworked powershell script allows to download docker images on a windows ma
 In the original one it wasn't obvious how does one import the image.\
 Upgraded script uses proper manifest schema to build manifest json and easily upload the image.\
 
-Images can later be transfered to the machine with docker and uploaded using following commands:
+Set the **$image** and **$tag** variables to the desired image name and version (for 'official' images like postgres use 'library/' prefix)\
+
+Images can later be transfered to the machine with docker (eg using pscp) and uploaded using following commands:
 
 ```bash
 tar -cvf imagename.tar *
