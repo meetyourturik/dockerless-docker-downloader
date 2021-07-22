@@ -1,5 +1,5 @@
 # Workaround for SelfSigned Cert an force TLS 1.2
-add-type @”
+add-type @"
 	using System.Net;
 	using System.Security.Cryptography.X509Certificates;
 	public class TrustAllCertsPolicy : ICertificatePolicy {
@@ -9,7 +9,7 @@ add-type @”
 			return true;
 		}
 	}
-“@
+"@
 [System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
 [System.Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
