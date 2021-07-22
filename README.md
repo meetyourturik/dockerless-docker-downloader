@@ -10,7 +10,7 @@ https://gitlab.com/Jancsoj78/dockerless_docker_downloader/-/blob/master/dockerle
 
 This reworked powershell script allows to download docker images on a windows machine without docker.\
 In the original one it wasn't obvious how does one import the image.\
-Upgraded script uses proper manifest schema to build manifest json and easily upload the image.\\
+Upgraded script uses proper manifest schema to build manifest json and easily upload the image.\
 
 Images can later be transfered to the machine with docker and uploaded using following commands:
 
@@ -23,6 +23,6 @@ Some useful info found here:
 
 https://github.com/coollog/build-containers-the-hard-way/blob/master/README.md
 
-In case something stops working, here's manifest schema: 
+In case something stops working, here's manifest schema for the curious mind to try and fix it: 
 
 https://docs.docker.com/registry/spec/manifest-v2-2/
